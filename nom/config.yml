@@ -1,0 +1,15 @@
+# Rss reader repo: https://github.com/guyfedwards/nom
+# Site to find new rss sources: https://rssfinder.app/
+feeds:
+  # GCP
+  - url: https://cloudblog.withgoogle.com/rss
+    name: "GCP - news        "
+  # AWS
+  # - Cf. https://jiripik.com/2021/09/02/list-of-all-amazon-aws-rss-feeds/
+  - url: https://aws.amazon.com/blogs/aws/feed/
+    name: "AWS - news        "
+  - url: https://aws.amazon.com/blogs/architecture/feed/
+    name: "AWS - architecture"
+  # SNYK
+  - url: https://snyk.io/blog/feed
+    name: "Snyk              "
