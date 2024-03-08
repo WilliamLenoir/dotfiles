@@ -1,1 +1,28 @@
 **/.DS_Store
+
+# ignore all
+*
+
+# except those folders
+!kitty/
+!kitty/**
+
+!nom/
+!nom/**
+
+!nvim/
+!nvim/**
+
+!tmux/
+!tmux/**
+
+!zsh/
+!zsh/**
+
+# For ZSH we backup the zshrc file only
+
+# ignore all the zsh files ...
+zsh/*
+# ... except the zshrc
+!zsh/.zshrc
+
