@@ -4,6 +4,9 @@
 *
 
 # except those folders
+
+!Makefile
+
 !kitty/
 !kitty/**
 
