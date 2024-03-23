@@ -22,6 +22,12 @@ return {
         end,
         desc = "Toogle Git Diffview",
       },
+      {
+        mode = { "n" },
+        "<leader>dv",
+        "<cmd>DiffviewOpen<cr>",
+        desc = "DiffviewOpen (git changes)",
+      },
     },
   },
 }
