@@ -92,9 +92,17 @@ return {
   },
   {
     "tpope/vim-fugitive",
-    cmd = { "G", "Gvdiffsplit", "GmasterDiff" },
+    layzy = false,
     config = function()
       vim.cmd("command GmasterDiff Gvdiffsplit origin/master")
     end,
+    keys = {
+      {
+        mode = { "n" },
+        "<leader>gq",
+        "<cmd>G difftool<cr><cmd>copen<cr>",
+        desc = "Git Quickfix list",
+      },
+    },
   },
 }
