@@ -602,6 +602,31 @@ cp /usr/lib/python3.9/lib-dynload/*.so   /home/william/.local/share/nvim/mason/p
   - https://johncodes.com/posts/2023/02-25-nvim-spell/
   - (how to build the spell binary) https://stackoverflow.com/questions/27240638/is-there-a-quick-way-to-rebuild-spell-files-from-wordlists
 
+## Grep
+
+### Telescope live_grep vs grep_string
+
+- `live_grep` = recherche exacte => en principe c'est celui-ci qu'il faut utiliser
+- `grep_string` = recherche fuzzy
+
+### FuzzySearch in buffer
+
+- `/` to fuzzy search in the current buffer (with the plugin `ggvgc/vim-fuzzysearch`)
+- `g/` to use the standard search method
+
+### Use RipGrep with all the features
+
+- useful because the history is kept
+- `<leader>rg`
+- **important** the quotes with the glob parenthesis are mandatory (optional with telescope)
+  - valid: `:Rg 'foo' -g '**/*.md*'`
+  - NOT valid: `:Rg 'foo' -g **/*.md*`
+
+### Use RipGrep from telescope
+
+- the history is not kept
+- <leader>gg (rip grep with args)
+
 ## References
 
 ### Documentation
