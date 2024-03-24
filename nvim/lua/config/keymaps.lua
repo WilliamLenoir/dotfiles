@@ -25,6 +25,7 @@ vim.api.nvim_set_keymap("n", "<leader>ka", "<Esc>:qa!<CR>", { noremap = true, si
 vim.api.nvim_set_keymap("n", "<leader>kk", "<Esc>:qa<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>vv", ":noautocmd vimgrep ``j **/*<LEFT><LEFT>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<tab>", "<c-^>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<tab>", "<esc><c-^>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "fd", "<Esc>:silent! wa<CR>", { noremap = true, silent = true })
 
 -- do not move to the top of the block when yanking in visual mode
