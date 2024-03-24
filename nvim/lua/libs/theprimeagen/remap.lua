@@ -70,6 +70,7 @@ vnoremap <C-c> "+y
 
 " escape with space bar
 nnoremap <leader><leader> <Esc>:noh<CR>
+vnoremap <leader><leader> <Esc>:noh<CR>
 ]])
 
 -- Tabs
