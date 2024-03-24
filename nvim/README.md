@@ -590,6 +590,18 @@ cp /usr/lib/python3.9/lib-dynload/*.so   /home/william/.local/share/nvim/mason/p
 - this tips comes from https://www.youtube.com/watch?v=FuYQ7M73bC0
 - you can find his dotfile here : https://github.com/omerxx/dotfiles/tree/master/nvim
 
+### Better text objects with nvim-treesitter (updated)
+
+- Cf. https://www.youtube.com/watch?v=CEMPq_r8UYQ&list=WL&t=648
+
+- use <C-c> to select node, you can repeat to select a wider range
+- use <backspace> to reduce the scope
+- text objects are defined here : ./lua/plugins/treesitter.lua
+  - `vim` select inside a method/function
+  - `vam` select all the method/function
+  - `vl=` select left side of an assignment (const foo = 'bar')
+  - `vr=` select right side of an assignment (const foo = 'bar')
+
 ## SpellFile Orthographe
 
 - init the directory with zg on a bad word
