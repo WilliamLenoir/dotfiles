@@ -20,7 +20,6 @@ return {
         -- log_view = {
         --   kind = "vsplit",
         -- },
-
         -- signs = {
         --   -- { CLOSED, OPENED }
         --   hunk = { "", "" },
@@ -93,6 +92,7 @@ return {
   {
     "tpope/vim-fugitive",
     layzy = false,
+    cmd = "G",
     config = function()
       vim.cmd("command GmasterDiff Gvdiffsplit origin/master")
     end,
