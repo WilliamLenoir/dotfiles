@@ -16,6 +16,15 @@ return {
         pyright = {},
         terraformls = {},
         tsserver = {},
+        ltex = {
+          filetypes = { "markdown", "text" },
+          flags = { debounce_text_changes = 300 },
+          language = "fr",
+          additionalRules = {
+            enablePickyRules = true,
+            motherTongue = "fr",
+          },
+        },
       },
     },
     keys = {
