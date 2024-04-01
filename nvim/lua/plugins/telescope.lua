@@ -44,6 +44,7 @@ return {
       { "<leader>gg", searchWithRipGrep, mode = { "n" }, desc = "Search with RipGrep" },
       { "<leader>te", "<cmd>Telescope<cr>", desc = "Telescope Menu" },
       { "<leader>tr", "<cmd>Telescope resume<cr>", desc = "Telescope resume" },
+      { "<leader>fo", "<cmd>Telescope oldfiles<cr>", desc = "Telescope oldfiles" },
       {
         mode = { "n" },
         "<leader>gs",
