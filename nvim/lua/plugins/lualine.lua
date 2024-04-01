@@ -1,3 +1,18 @@
+local clients_lsp = function()
+  local bufnr = vim.api.nvim_get_current_buf()
+
+  local clients = vim.lsp.buf_get_clients(bufnr)
+  if next(clients) == nil then
+    return ""
+  end
+
+  local c = {}
+  for _, client in pairs(clients) do
+    table.insert(c, client.name)
+  end
+  return "\u{f085} " .. table.concat(c, "|")
+end
+
 local function get_basename(path)
   return path:match("([^/\\]+)$")
 end
@@ -90,6 +105,9 @@ return {
             section_separators = { left = "", right = "" },
           },
           { "encoding" },
+          {
+            clients_lsp,
+          },
           { "searchcount" },
           { "selectioncount" },
         },
