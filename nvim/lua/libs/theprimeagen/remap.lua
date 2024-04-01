@@ -44,7 +44,6 @@ xnoremap <silent> i. :<C-U>normal! T.vt.<CR>
 xnoremap <silent> a. :<C-U>normal! F.vf.<CR>
 
 nnoremap cw ciw
-nnoremap vw viw
 nnoremap dw diw
 nnoremap yw yiw
 
