@@ -5,6 +5,9 @@ return {
   {
     "sindrets/diffview.nvim",
     lazy = false,
+    cmd = {
+      "DiffviewOpen",
+    },
     keys = {
       {
         mode = { "n" },
