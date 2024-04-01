@@ -24,9 +24,32 @@ vim.api.nvim_set_keymap("n", "<leader>jk", "<ESC><C-w>c", { noremap = true, sile
 vim.api.nvim_set_keymap("n", "<leader>ka", "<Esc>:qa!<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>kk", "<Esc>:qa<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>vv", ":noautocmd vimgrep ``j **/*<LEFT><LEFT>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<tab>", "<c-^>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<tab>", "<esc><c-^>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "fd", "<Esc>:silent! wa<CR>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("n", "<leader><tab>a", "<c-^>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<leader><tab>a", "<esc><c-^>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("n", "<C-x>", "<c-^>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-x>", "<esc><c-^>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("n", "<leader>.", "<c-^>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<leader>.", "<esc><c-^>", { noremap = true, silent = true })
+
+vim.cmd([[
+nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
+nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
+]])
+
+vim.api.nvim_set_keymap("n", "j", "gj", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "k", "gk", { noremap = true, silent = true })
+
+-- open the lazyvim floating terminal
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader><esc>",
+  '<cmd>lua require("lazyvim.util").terminal()<cr>',
+  { desc = "Terminal (cwd)" }
+)
 
 -- do not move to the top of the block when yanking in visual mode
 -- cf. https://stackoverflow.com/questions/3806629/yank-a-region-in-vim-without-the-cursor-moving-to-the-top-of-the-block
