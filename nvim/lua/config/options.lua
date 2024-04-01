@@ -21,9 +21,7 @@ vim.opt.spelllang = { "en", "fr" }
 vim.opt.conceallevel = 2
 
 -- load bashrc so that aliases are available in vim command line
-vim.opt.shellcmdflag = "-ic"
-
-vim.opt.clipboard = "" -- NO Sync with system clipboard
+vim.opt.shellcmdflag = "-c"
 
 -- set lazyredraw to avoid blinking
 vim.opt.lazyredraw = true
