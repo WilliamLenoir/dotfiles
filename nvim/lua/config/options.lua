@@ -31,3 +31,6 @@ vim.opt.lazyredraw = true
 vim.opt.swapfile = false
 
 vim.opt.path:append("**")
+
+-- Disable the autoformat on save (you can still use <leader>i to format manually)
+vim.g.autoformat = false
