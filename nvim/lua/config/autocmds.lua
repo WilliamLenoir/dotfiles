@@ -284,6 +284,13 @@ vim.api.nvim_create_autocmd("ModeChanged", {
 --})
 
 vim.cmd([[
+" Those colors are used for the diff tools (fugitive, diffthis, diffview)
+hi DiffDelete guifg=#ff9999 guibg=#ff9999
+hi DiffAdd    guifg=black guibg=#e4f9c7
+hi DiffChange guibg=#fef7e0 guifg=black           " the changed code line
+hi DiffText gui=bold guibg=#fef7e0 guifg=#9803fc  " the code that has changed in the code line
+
+" We use similar colors but for Neogit
 hi NeogitDiffDeleteHighlight guifg=black guibg=#ff9999
 hi NeogitDiffAddHighlight guifg=black guibg=#e4f9c7
 hi NeogitDiffAdd  guifg=black guibg=#e4f9c7
