@@ -423,3 +423,6 @@ vim.api.nvim_create_autocmd("DirChanged", {
   end,
   desc = "Disable auto rooter after changing a Directory",
 })
+
+-- No spell mode in markdown by default
+vim.cmd("autocmd FileType markdown setlocal nospell")
