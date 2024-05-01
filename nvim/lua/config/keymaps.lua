@@ -64,7 +64,6 @@ vim.cmd("tmap <C-k> <Esc><C-w>k")
 vim.cmd("tmap <C-l> <Esc><C-w>l")
 vim.cmd("tmap <C-j> <Esc><C-w>j")
 vim.cmd("tmap <esc> jk") -- avoid to type escape two times
-vim.cmd("tnoremap jj <down><down>") -- for scrolling in git log but it is better to use capital J instead
 vim.cmd("nnoremap   <silent>   <C-n> :FloatermToggle<CR>")
 vim.cmd("tmap       <silent>   <C-n> jk:FloatermToggle<CR>")
 

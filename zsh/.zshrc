@@ -74,6 +74,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -194,4 +195,11 @@ ZSH_HIGHLIGHT_STYLES[arg0]='fg=black'
 # Quotes
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=green'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=green'
+
+#############################
+# zsh-vi-mode configuration
+#############################
+
+# Only changing the escape key to `jj` in insert mode, we still
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
 
