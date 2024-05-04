@@ -75,6 +75,13 @@ return {
       "L3MON4D3/LuaSnip",
     },
     opts = {
+      formatting = {
+        format = function(entry, vim_item)
+          -- les suggestions de plus de 30 caractères sont affichées mais tronquées
+          vim_item.abbr = string.sub(vim_item.abbr, 1, 30)
+          return vim_item
+        end,
+      },
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         { name = "luasnip" },
