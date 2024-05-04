@@ -6,15 +6,13 @@ return {
     lazy = false,
   },
   {
-    -- fuzzy search with /
+    -- fuzzy search with z/
     "ggvgc/vim-fuzzysearch",
     lazy = false,
     config = function()
       vim.cmd([[
-        " use / to launch a fuzzy search (replace the default methode)
-        nnoremap / :FuzzySearch<CR>
-        " use g/ to use the standard search
-        nnoremap g/ /
+        " use z/ to launch a fuzzy search (replace the default methode)
+        nnoremap z/ :FuzzySearch<CR>
         let g:fuzzysearch_prompt = '/'
       ]])
     end,
